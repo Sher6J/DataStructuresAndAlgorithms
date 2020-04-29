@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2aab67d4-1288-451f-9850-2f1ae5e742fb" name="Default Changelist" comment="" />
+    <list default="true" id="2aab67d4-1288-451f-9850-2f1ae5e742fb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +15,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -34,6 +39,9 @@
     <option name="vmOptions" value="-DarchetypeCatalog=internal" />
   </component>
   <component name="ProjectId" id="1bAf7tw5SJTA9T6GkY0j3ujgdBA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -45,7 +53,20 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.ignored.files" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ArrayQueueDemo">
+    <configuration name="ArrayQueueDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.sher6j.queue.ArrayQueueDemo" />
+      <module name="DataStructures" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.sher6j.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SparseArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.sher6.sparsearray.SparseArray" />
       <module name="DataStructures" />
@@ -61,6 +82,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ArrayQueueDemo" />
         <item itemvalue="Application.SparseArray" />
       </list>
     </recent_temporary>
@@ -75,7 +97,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1588079655117</updated>
-      <workItem from="1588079660394" duration="2120000" />
+      <workItem from="1588079660394" duration="2800000" />
+      <workItem from="1588136488740" duration="2123000" />
     </task>
     <servers />
   </component>
@@ -83,33 +106,41 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1237" height="479" key="GridCell.Tab.0.bottom" timestamp="1588081861751">
+    <state width="1237" height="499" key="GridCell.Tab.0.bottom" timestamp="1588138223900">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="479" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588081861751" />
-    <state width="1237" height="479" key="GridCell.Tab.0.center" timestamp="1588081861751">
+    <state width="1237" height="499" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588138223900" />
+    <state width="1237" height="499" key="GridCell.Tab.0.center" timestamp="1588138223900">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="479" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588081861751" />
-    <state width="1237" height="479" key="GridCell.Tab.0.left" timestamp="1588081861751">
+    <state width="1237" height="499" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588138223900" />
+    <state width="1237" height="499" key="GridCell.Tab.0.left" timestamp="1588138223899">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="479" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588081861751" />
-    <state width="1237" height="479" key="GridCell.Tab.0.right" timestamp="1588081861751">
+    <state width="1237" height="499" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588138223899" />
+    <state width="1237" height="499" key="GridCell.Tab.0.right" timestamp="1588138223900">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="479" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588081861751" />
-    <state x="325" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1588079660406">
+    <state width="1237" height="499" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588138223900" />
+    <state x="325" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1588136487694">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588079660406" />
+    <state x="325" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1588136487694" />
     <state x="371" y="94" key="extract.method.dialog" timestamp="1588081165723">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="94" key="extract.method.dialog/0.0.1280.680@0.0.1280.680" timestamp="1588081165723" />
+    <state x="297" y="132" key="git4idea.merge.GitPullDialog" timestamp="1588138600618">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="297" y="132" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1588138600618" />
     <state x="28" y="0" key="new project wizard" timestamp="1588079681113">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="28" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1588079681113" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1588137566628">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1588137566628" />
   </component>
 </project>
