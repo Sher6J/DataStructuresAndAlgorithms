@@ -1,4 +1,4 @@
-package cn.sher6.sparsearray;
+package cn.sher6j.sparsearray;
 
 /**
  * 稀疏数组与普通数组之间的相互转化
