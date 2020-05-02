@@ -16,11 +16,34 @@ public class SingleLinkedListDemo {
 
         SingleLinkedList singleLinkedList = new SingleLinkedList();
 
-        singleLinkedList.add(hero1);
-        singleLinkedList.add(hero2);
-        singleLinkedList.add(hero3);
-        singleLinkedList.add(hero4);
+        //加入
+//        singleLinkedList.add(hero1);
+//        singleLinkedList.add(hero2);
+//        singleLinkedList.add(hero3);
+//        singleLinkedList.add(hero4);
 
+        //加入按编号
+        singleLinkedList.addByOrder(hero1);
+        singleLinkedList.addByOrder(hero4);
+        singleLinkedList.addByOrder(hero3);
+        singleLinkedList.addByOrder(hero2);
+        singleLinkedList.addByOrder(hero4);
+
+        System.out.println("修改前：");
+        singleLinkedList.show();
+        System.out.println("=============");
+
+        HeroNode newHero1 = new HeroNode(1, "宋公明", "呼保义");
+        singleLinkedList.update(newHero1);
+
+        System.out.println("修改后：");
+        singleLinkedList.show();
+        System.out.println("=============");
+
+        //删除一个节点
+        singleLinkedList.del(1);
+        singleLinkedList.del(4);
+        System.out.println("删除后：");
         singleLinkedList.show();
     }
 }
@@ -52,6 +75,91 @@ class SingleLinkedList {
         }
 
         temp.next = heroNode;
+    }
+
+    /**
+     * 按序添加英雄，根据排名将其插入到指定位置
+     * @param heroNode
+     */
+    public void addByOrder(HeroNode heroNode) {
+        HeroNode temp = this.head; //辅助接点用来遍历
+        //由于是单链表，找到temp应该是添加位置的前一个节点，否则插入不进去
+        boolean flag = false; //标志添加的编号是否存在
+        while (true) {
+            if (temp.next == null) {//temp已经在链表的最后
+                break;
+            }
+            if (temp.next.no > heroNode.no) {//位置找到，就在temp的后面插入
+                break;
+            } else if (temp.next.no == heroNode.no) { //已经存在
+                flag = true;//说明编号存在
+                break;
+            }
+            temp = temp.next;
+        }
+        //判断flag的值
+        if (flag == true) { //编号存在，不能添加
+            System.out.printf("该节点编号%d已经存在，不能加入\n", heroNode.no);
+        } else {
+            heroNode.next = temp.next;
+            temp.next = heroNode;
+        }
+    }
+
+    /**
+     * 根据heroNode的no修改节点
+     * @param heroNode
+     */
+    public void update(HeroNode heroNode) {
+        //判断是否空
+        if (this.head.next == null) {
+            System.out.println("链表为空");
+            return;
+        }
+        HeroNode temp = this.head.next;
+        boolean flag = false; //表示是否找到该节点
+        while (true) {
+            if (temp == null) {
+                break;
+            }
+            if (temp.no == heroNode.no) {
+                flag = true;
+                break;
+            }
+        }
+        if (flag) {
+            temp.name = heroNode.name;
+            temp.nickName = heroNode.nickName;
+        } else {
+            System.out.printf("没有编号为%d节点，不能修改\n", heroNode.no);
+        }
+    }
+
+    /**
+     * 根据编号删除节点
+     *     比较时应该是temp.next.no和传入的no比较
+     * @param no
+     */
+    public void del(int no) {
+        HeroNode temp = head;
+        boolean flag = false; //标志是否找到待删除节点
+        while (true) {
+            if (temp.next == null) { //链表最后
+                break;
+            }
+            if (temp.next.no == no) {
+                //找到了待删除节点的前一个节点temp
+                flag = true;
+                break;
+            }
+            temp = temp.next;
+        }
+        if (flag) {
+            temp.next = temp.next.next;
+        } else {
+            System.out.printf("要删除编号为%d的节点不存在", no);
+        }
+
     }
 
     /**
