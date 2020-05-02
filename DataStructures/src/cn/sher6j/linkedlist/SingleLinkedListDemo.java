@@ -35,7 +35,7 @@ public class SingleLinkedListDemo {
         singleLinkedList.show();
         System.out.println("=============");
 
-        HeroNode newHero1 = new HeroNode(1, "宋公明", "呼保义");
+        HeroNode newHero1 = new HeroNode(3, "宋公明", "呼保义");
         singleLinkedList.update(newHero1);
 
         System.out.println("修改后：");
@@ -253,6 +253,7 @@ class SingleLinkedList {
                 flag = true;
                 break;
             }
+            temp = temp.next;
         }
         if (flag) {
             temp.name = heroNode.name;
